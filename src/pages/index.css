@@ -569,7 +569,7 @@ color:#FFAE00;
 /* Mejores Ofertas */
 .MejoresOfertas{
   width: 100%;
-  height: 1400px;
+  height: 1300px;
   position: relative;
   top:400px;
 }
@@ -631,8 +631,6 @@ color:#FFAE00;
   height: 400px;
   background-image: url(/public/proceder_pedido.png);
   background-position: center center;
-  position: relative;
-  top:500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -662,4 +660,237 @@ font-weight: 600;
 border: transparent;
 border-radius: 10px;
 text-align: center; 
+}
+/* footer */
+.Footer{
+  width:100%;
+  height:420px;
+  background-color: black;
+  color: white;
+  position: relative;
+  top: 500px;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  font-family: "Source Sans 3", sans-serif;
+  border-bottom: 1px solid white;
+}
+.Footer h3{
+  position: relative;
+  bottom: 100px;
+  left: 120px;
+}
+.Nombre-ciudades{
+width: 10%;
+height: 150px;
+position:relative;
+right: 200px;
+top: 50px;
+}
+.Footer-dos{
+  width:100%;
+  height:420px;
+  background-color:black;
+  color: white;
+  position: relative;
+  top: 500px;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  font-family: "Source Sans 3", sans-serif;
+}
+.Soporte{
+  position: relative;
+  left:50px;
+}
+.Soporte H3{
+  position: relative;
+  bottom: 30px;
+}
+.siguenos{
+width: 28%;
+height:200px;
+display:flex;
+flex-direction: column;
+}
+.siguenos div img{
+ margin-right: 20px;
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+.siguenos section input{
+  width: 250px;
+  height:40px;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #424242;
+  border: transparent;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+.siguenos section button{
+  width: 150px;
+  height: 46px;
+  background-color:#FFAE00 ;
+  color: #ffff;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  border: transparent;
+  box-shadow: 0 5px 15px #FFAE00 ;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .Card-MejoresOfertas {
+    width: 90%;
+    left: 50px;
+  }
+
+  .Card-populares {
+    width: 22%;
+  }
+
+  .Card-restaurantes {
+    width: 23%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    flex-wrap: wrap;
+    height: auto;
+    padding:20px;
+  }
+  .ubicacion{
+    display: none;
+  }
+
+  .Encuentra-Comida {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .fondo-fideos {
+    display: none;
+  }
+
+  .Card-Encuentra-comida {
+    width: 90%;
+  }
+
+  .tarjetas {
+    flex-wrap: wrap;
+    margin-top:20px;
+    margin-bottom:370px;
+  }
+
+  .ComidaDescuento {
+    max-width: 30%;
+    margin: 20px;
+  }
+  .Comofunciona{
+    margin-bottom: 100px;    
+  }
+  .Comofunciona h2{
+   margin-bottom: -280px;
+  }
+  .Card-ComoFunciona{
+    max-width: 20%;
+  }
+  .Populares{
+    flex-wrap:wrap;
+  }  
+  .Populares h2{
+   margin-bottom: -350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Titulo-Encuentra-Comida h1 {
+    font-size: 42px;
+  }
+
+  .ubicacion {
+    width: 100%;
+  }
+
+  .ComidaDescuento {
+    width: 90%;
+  }
+
+  .Card-populares {
+    width: 90%;
+  }
+
+  .Card-restaurantes {
+    width: 90%;
+  }
+
+  .Card-MejoresOfertas {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .Card-MejoresOfertas img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .Footer {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .Footer-dos {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .registro, .inicio-sesion button {
+    width: 140px;
+  }
+
+  .Ubicacion {
+    width: 90%;
+  }
+
+  .Card-Encuentra-comida {
+    height: auto;
+    padding: 15px;
+  }
+
+  .Entrega, .Recogida {
+    margin: 10px 0;
+  }
+
+  .TiposComida-tipos {
+    width: 150px;
+  }
+
+  .seccion-CardEntrega {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .instala-app-card {
+    flex-direction: column;
+  }
+
+  .instala-app-texto p {
+    width: 90%;
+  }
 }
